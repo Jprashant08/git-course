@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+    <title>kart page</title>
+    <head>
+        <style>
+            body{
+                margin:0;
+                border: 0;
+                padding:0;
+                font-family: monospace;
+                justify-content: center;
+               }
+               .topnav{
+                position:relative; 
+                display: flex; /* Enables Flexbox */
+                justify-content: left; /* Aligns items to the right */
+                align-items: center; /* Centers icons vertically */
+                height:42px;
+                width: 100%;
+                border-bottom: solid black;
+                border-width: 1px;
+                background-color:white;
+                color:black;
+            }
+            .div1{
+                position: absolute;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width:auto;
+               /* border: red solid 3px;*/
+                gap: 10px;
+                padding: 0;
+            }
+
+            .top-section1{
+
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+            .top-section2{
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+            .top-section3{
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+            .kart{
+                display:flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+                background-color: yellowgreen;
+                width: 100%;
+                height: auto;
+            }
+            .left-block{
+                display:flex;
+                flex-direction: column;
+                justify-content:center;
+                align-items: center;
+                position: relative;
+                height: 60vh;
+                width:100%;
+                padding: 0;
+                background-color: rgb(255, 255, 255);
+            }
+            .addr-div1{
+                position: relative;
+                height:fit-content;
+                width:fit-content;
+                margin: 8px auto;
+                background-color: white
+            }
+            .addr-div2{
+                position: relative;
+                height:fit-content;
+                width:fit-content;
+                margin: 8px auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .addr-div3{
+                position: relative;
+                height:fit-content;
+                width:fit-content;
+                margin: 8px auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .addr-div4{
+                position: relative;
+                height:fit-content;
+                width:fit-content;
+                margin: 8px auto;
+                background-color: rgb(255, 255, 255);
+            }
+            .btn-add-items{
+                background: transparent;
+                border:solid  black;
+                border-width: 2px;
+                width: 400px;
+                height: 60px;
+                cursor: pointer;
+            }
+            .right-block{
+                position: relative;
+                height: 60vh;
+                width: auto;
+                padding: 0;
+                background-color: aquamarine;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="topnav">
+            <h1 style="padding-left: 12px; margin: 0%; font-family: monospace;">iStore</h1>
+            <div class="div1">
+            <section class="top-section1"><button class="kartbtn" id="kartbtn" style="border: none; background: none; cursor: pointer;"><img src="/home/prashant/git-project/shopping-cart.png" style="width: 28px;" href=""></button></section>
+            <section class="top-section2"><button class="searchbtn" id="searchbtn" style="border: none; background: none; cursor: pointer;"><img src="/home/prashant/git-project/search.png" style="width: 28px;" href=""></button></section>
+            <section class="top-section3"><button class="userbtn" id="userbtn" style="border: none; background: none; cursor: pointer;"><img src="/home/prashant/git-project/user.png" style="width: 28px;"></button></section>
+            </div>
+        </nav>
+        <div class="kart" id="kart">
+            <div class="left-block">
+                <div class="addr-div1">
+                    <img src="shopping.png" style="width: 240px; background: transparent;">
+                </div>
+                <div class="addr-div2" style="font-family: Arial, Helvetica, sans-serif; font-weight: 700;font-size: 20px;"> Hey, It feels so light! </div>
+                <div class="addr-div3" style="font-family: Arial, Helvetica, sans-serif;font-weight: 400; font-size: 20px;"> there is nothing in your kart. Lets add some items </div>
+                <div class="addr-div4"><button class="btn-add-items" id="add-items"> ADD ITMES </button>
+                </div>
+
+            </div>
+            <div class="right-block">
+
+            </div>            
+        </div>
+    </body>
+</html>

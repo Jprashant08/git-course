@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                /*background-color: rgb(63, 61, 61);*/
+            }
+            .topnav{
+                position:relative; 
+                display: flex; /* Enables Flexbox */
+                justify-content: left; /* Aligns items to the right */
+                align-items: center; /* Centers icons vertically */
+                height:42px;
+                width: 100%;
+                margin-bottom: 20px;
+                box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.1);
+                border-bottom: solid black;
+                border-width: 1px;
+                background-color:white;
+                color:black;
+            }
+            .div1{
+                position: absolute;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width:auto;
+               /* border: red solid 3px;*/
+                gap: 10px;
+                padding: 0;
+            }
+
+            .top-section1{
+
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+            .top-section2{
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+            .top-section3{
+                font-family: monospace;
+                font-size: large;
+                padding: 10px;
+                height:20px
+            }
+
+            .center-section {
+            width:auto; /* Adjust width as needed */
+            display: flex;
+            height:fit-content;
+            margin: 20px auto; /* Centers the section 
+            /*background-color: #a5a5a5;*/
+            /*padding: 20px;*/
+            box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.1);
+            justify-content: center;/* Distribute subsections evenly */
+        }
+
+        .subsection{
+            /*align-items: center;
+            justify-content: center;*/
+            margin: 0%;
+            height:auto;
+            display: flex;
+            width: auto;
+            position:relative;
+            overflow: hidden;
+        }
+        .mid-section{
+            width:auto; /* Adjust width as needed */
+            display: flex;
+            height:fit-content;
+           /*margin: 6px auto; /* Centers the section */
+            /*background-color: #a5a5a5;*/
+            /*padding: 20px;*/
+            box-shadow: 10px 8px 10px rgba(0, 0, 0, 0.1);
+            justify-content: center;/* Distribute subsections evenly */
+        }
+        #mid-subsection2{
+            display: flex;
+            position: absolute;
+            height: auto;
+            width: auto;
+            background-color: tomato;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="topnav">
+            <h1 style="padding-left: 12px; margin: 0%; font-family: monospace;">iStore</h1>
+            <div class="div1">
+
+            <section class="top-section1">
+                <button class="kartbtn" id="kartbtn" style="border: none; background: none; cursor: pointer;">
+                    <a href="/home/prashant/git-project/kart.html">
+                        <img src="/home/prashant/git-project/shopping-cart.png" style="width: 28px;">
+                    </a>
+                </button>
+            </section>
+
+            <section class="top-section2">
+                <button class="searchbtn" id="searchbtn" style="border: none; background: none; cursor: pointer;">
+                    <img src="/home/prashant/git-project/search.png" style="width: 28px;" href="">
+                </button>
+            </section>
+
+            <section class="top-section3"> 
+                <button class="userbtn" id="userbtn" style="border: none; background: none; cursor: pointer;">
+                    <img src="/home/prashant/git-project/user.png" style="width: 28px;">
+                </button>
+            </section>
+            </div>
+        </nav>
+        <div class="center-section">
+            <div class="subsection"><img src="/home/prashant/git-project/iphone3.png" style="width:100%;"></div>
+            <div class="subsection"><img src="/home/prashant/git-project/iphone2.png" style="width:100%;"></div>
+            <div class="subsection"><img src="/home/prashant/git-project/iphone4.png" style="width:100%"></div>
+        </div>
+        <div class="mid-section" id="mid-section">
+            <div class="mid-subsection" id="mid-subsection1"></div>
+            <div class="mid-subsection" id="mid-subsection2"><img src="/home/prashant/git-project/iphone1.png"></div>
+            <div class="mid-subsection" id="mid-subsection3"></div>
+        </div>
+    </body>
+</html>
